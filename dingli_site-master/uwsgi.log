@@ -1,0 +1,414 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:13:02 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:36006 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xf24c20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26392)
+spawned uWSGI worker 1 (pid: 26393, cores: 2)
+spawned uWSGI worker 2 (pid: 26394, cores: 2)
+spawned uWSGI worker 3 (pid: 26395, cores: 2)
+spawned uWSGI worker 4 (pid: 26396, cores: 2)
+spawned uWSGI http 1 (pid: 26397)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 26397)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:14:47 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8080 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:41836 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x13d3c20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26408)
+spawned uWSGI worker 1 (pid: 26409, cores: 2)
+spawned uWSGI worker 2 (pid: 26410, cores: 2)
+spawned uWSGI worker 3 (pid: 26411, cores: 2)
+spawned uWSGI worker 4 (pid: 26412, cores: 2)
+spawned uWSGI http 1 (pid: 26413)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 26413)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:17:04 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:80 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:35648 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x2081c20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26428)
+spawned uWSGI worker 1 (pid: 26429, cores: 2)
+spawned uWSGI worker 2 (pid: 26430, cores: 2)
+spawned uWSGI worker 3 (pid: 26431, cores: 2)
+spawned uWSGI worker 4 (pid: 26432, cores: 2)
+spawned uWSGI http 1 (pid: 26433)
+--- no python application found, check your startup logs for errors ---
+[pid: 26432|app: -1|req: -1/1] 183.220.168.43 () {38 vars in 857 bytes} [Wed May 15 12:17:10 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26431|app: -1|req: -1/2] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:17:11 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/3] 183.220.168.43 () {42 vars in 925 bytes} [Wed May 15 12:18:19 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26430|app: -1|req: -1/4] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:18:20 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:18:32 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:80).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/5] 183.220.168.43 () {42 vars in 925 bytes} [Wed May 15 12:18:37 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26431|app: -1|req: -1/6] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:18:39 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:19:31 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:32935 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x26c9c20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26451)
+spawned uWSGI worker 1 (pid: 26452, cores: 2)
+spawned uWSGI worker 2 (pid: 26453, cores: 2)
+spawned uWSGI worker 3 (pid: 26454, cores: 2)
+spawned uWSGI worker 4 (pid: 26455, cores: 2)
+spawned uWSGI http 1 (pid: 26456)
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/7] 183.220.168.43 () {42 vars in 925 bytes} [Wed May 15 12:19:36 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26431|app: -1|req: -1/8] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:19:37 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26432|app: -1|req: -1/9] 183.220.168.43 () {38 vars in 857 bytes} [Wed May 15 12:19:53 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26430|app: -1|req: -1/10] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:19:55 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 26456)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:21:38 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:80).
+bind(): Address already in use [core/socket.c line 769]
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/11] 183.220.168.43 () {42 vars in 925 bytes} [Wed May 15 12:21:44 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26431|app: -1|req: -1/12] 183.220.168.43 () {40 vars in 894 bytes} [Wed May 15 12:21:45 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+[uwsgi-http key: www.yldachina.com client_addr: 66.249.66.132 client_port: 18123] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/13] 66.249.66.132 () {34 vars in 538 bytes} [Wed May 15 12:26:22 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:26:45 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46158 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1fb1c20
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26474)
+spawned uWSGI worker 1 (pid: 26475, cores: 2)
+spawned uWSGI worker 2 (pid: 26476, cores: 2)
+spawned uWSGI worker 3 (pid: 26477, cores: 2)
+spawned uWSGI worker 4 (pid: 26478, cores: 2)
+spawned uWSGI http 1 (pid: 26479)
+--- no python application found, check your startup logs for errors ---
+[pid: 26478|app: -1|req: -1/1] 183.220.168.43 () {38 vars in 864 bytes} [Wed May 15 12:26:48 2019] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26478|app: -1|req: -1/2] 183.220.168.43 () {36 vars in 802 bytes} [Wed May 15 12:26:48 2019] GET /favicon.ico => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 26429|app: -1|req: -1/14] 95.213.177.125 () {36 vars in 667 bytes} [Wed May 15 12:28:25 2019] POST http://check.proxyradar.com/azenv.php?auth=155789450537&a=PSCN&i=2018351401&p=80 => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 26479)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+Wed May 15 12:32:59 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed May 15 12:32:59 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 12:54:56 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 2.7.12 (default, Nov 19 2016, 06:48:10)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x199ef80
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+failed to open python file dingli_site-master/wsgi.py
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26558)
+spawned uWSGI worker 1 (pid: 26559, cores: 2)
+spawned uWSGI worker 2 (pid: 26560, cores: 2)
+spawned uWSGI worker 3 (pid: 26561, cores: 2)
+spawned uWSGI worker 4 (pid: 26562, cores: 2)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 13:05:24 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8080).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed May 15 13:16:19 2019] ***
+compiled with version: 5.4.0 20160609 on 14 May 2019 00:37:38
+os: Linux-4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 21:17:51 UTC 2017
+nodename: iZwz9e0o2y2qafjmpqih0jZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/admin/dingli3/site/dingli_site-master
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/admin/dingli3/site/dingli_site-master
+your processes number limit is 3825
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8080).
+bind(): Address already in use [core/socket.c line 769]

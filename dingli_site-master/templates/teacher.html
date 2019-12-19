@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+{% endblock %}
+{% block content %}
+        <!-- breadcumb-area start -->
+        <div class="breadcumb-area black-opacity bg-img-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcumb-wrap">
+                            <h2>{{category}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcumb-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li><a href="index.html">首页</a></li>
+                                <li>/</li>
+                                <li>{{category}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcumb-area end -->
+
+        <!-- .service-area start -->
+        <section class="service-area ptb-100">
+            <div class="container">
+{% for item in results %}
+{% if forloop.counter0|divisibleby:3 %}
+				<div class="row">
+					{% endif %}
+                    <div class="col-md-4 col-sm-6 col-xs-12 col">
+                        <div class="service-wrap mb-30">
+                            <div class="service-img">
+                                <img src="/media/{{item.photo}}" alt="" />
+                            </div>
+                            <div class="service-content">
+                                <h3>{{item.name}}</h3>
+				<span class="label label-default">{{item.title}}</span>
+                                <span class="label label-default">{{item.extratitle}}</span>
+                                <p>{{item.introduction | slice:"30"}}...</p>
+                                <a href="/teacherdetail/{{item.id}}">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+{% if forloop.counter|divisibleby:3 %}
+				</div>
+	{% endif %}
+{% endfor %}
+                <!--<div class="row">-->
+
+                    <!--<div class="col-md-4 col-sm-6 col-xs-12 col">-->
+                        <!--<div class="service-wrap mb-30">-->
+                            <!--<div class="service-img">-->
+                                <!--<img src="/static/assets/images/service/1.jpg" alt="" />-->
+                            <!--</div>-->
+                            <!--<div class="service-content">-->
+                                <!--<h3>Performance</h3>-->
+                                <!--<p>majority have suffered alteration in some form, by injected humour, or randomised. by injected humour, or randomised.</p>-->
+                                <!--<a href="single-service.html">Read More</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+
+            </div>
+        </section>
+        <!-- .service-area end -->
+
+{% endblock %}

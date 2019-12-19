@@ -1,0 +1,346 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+<section class="slider-area">
+    <div class="slider-active2 slider-next-prev-style">
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider1.jpg' %}" alt="" class="slider">
+        </div>
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider2.jpg' %}" alt="" class="slider">
+        </div>
+        <div class="slider-items">
+            <img src="{% static 'assets/images/slider/slider3.jpg' %}" alt="" class="slider">
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block content %}
+<!--blog-area-->
+<section class="service-area ptb-140 bg-1">
+    <div class="container">
+        <div class="row">
+            {% for article in list %}
+            <div class="col-md-4 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s"
+                 style="visibility: visible; animation-delay: 0.1s;">
+                <div class="blog-wrap">
+                    <div class="blog-img">
+                        <img src="/media/{{article.title_pic}}" alt="">
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="/article/{{article.id}}">{{ article.title | slice:"15" }}...</a></h3>
+                        <p>{{ article.introduction}}</p>
+                        <a href="/article/{{article.id}}" class="btn-style">Read More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+        <section class="testmonial-area ptb-10">
+            <div class="container">
+                <div class="row">
+                    <div class="test-active dotate-style">
+                                                                    <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                 <a href="/special/5">
+                                <div class="client-info">
+                                    <h3>电子信息技术专业</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>面向生产管理，技术管理，电子设备的运行、操作、管理与维护，智能电子产品二次开发与系统集成，电子产品...</p>
+                                </div>
+                                 </a>
+                            </div>
+                        </div>
+                                                <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                 <a href="/special/6">
+                                <div class="client-info">
+                                    <h3>计算机网络技术</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>本专业主要向网络综合管理、移动应用开发、Web前端开发、网站管理等岗位，从事计算机网络建设、运行...</p>
+                                </div>
+                                 </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                <a href="/special/1">
+                                <div class="client-info">
+                                    <h3>移动应用开发专业</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                    <p>培养互联网+生活、娱乐、金融、教育、医疗、保险、健康等行业移动各种手机端的App应用开发的高素质人员.</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                <a href="/special/2">
+                                <div class="client-info">
+                                    <h3>移动通信技术专业</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                    </ul>
+                                    <p>本专业主要向移动通信网络测试优化工程师、移动通信网络工程建设工程师、运维管理工程师、通信产品服务销售..</p>
+                                </div>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                <a href="/special/3">
+                                <div class="client-info text-right">
+                                    <h3>软件技术专业</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                    <p>本专业主要面向Web前端开发、后端软件开发、Android手机软件开发、软件UI设计、软件测试、软件运维...</p>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="client-wrap fix">
+                                 <a href="/special/4">
+                                <div class="client-info">
+                                    <h3>物联网应用技术专业</h3>
+                                    <span>软件教研室</span>
+                                    <ul>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star"></i></li>
+                                        <li><i class="fa fa-star-o"></i></li>
+                                    </ul>
+                                    <p>面向基础设施和民生服务等领域的智能制造、智能电力、智能物流、智能交通、智能安防、智能环保、智能医疗...</p>
+                                </div>
+                                 </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<section class="team-area team-area2 team-area3 ptb-30">
+            <div class="container">
+                <div class="row">
+            {% for item  in Leader_list %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <div class="team-wrap3 mb-30">
+                            <div class="team-img">
+                                <img src="/media/{{item.photo}}" alt="">
+                            </div>
+                            <div class="team-content">
+                               <h3>{{item.name}}</h3>
+                                <p>{{item.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-3  col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s;">-->
+                        <!--<div class="team-wrap3 mb-30">-->
+                            <!--<div class="team-img">-->
+                                <!--<img src="static/assets/images/team/team2/2.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="team-content">-->
+                                <!--<h3>Connor Charles</h3>-->
+                                <!--<p>Founder</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3  col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s;">-->
+                        <!--<div class="team-wrap3 mb-30">-->
+                            <!--<div class="team-img">-->
+                                <!--<img src="static/assets/images/team/team2/3.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="team-content">-->
+                                <!--<h3>Robert Kyle</h3>-->
+                                <!--<p>Sales Head</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s;">-->
+                        <!--<div class="team-wrap3 mb-30">-->
+                            <!--<div class="team-img">-->
+                                <!--<img src="static/assets/images/team/team2/4.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<div class="team-content">-->
+                                <!--<h3>Brayden Shar</h3>-->
+                                <!--<p>The Boss</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+            {% endfor %}
+                </div>
+            </div>
+        </section>
+
+
+<section class="ptb-30 team-area team-area2">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s"
+                 style="visibility: visible; animation-delay: 0.1s;">
+                <div class="team-wrap2">
+                    <div class="team-img">
+                        <div>
+                            <div>
+                                <div align="center"><img src="/static/assets/images/choose-1.png" alt="Choose Images">
+                                </div>
+                            </div>
+                            <div>
+                                <h4>研究院</h4>
+                                <p>
+                                    <a href="ys_yjy.aspx">
+                                        教育专家与企业专家，携手教学名师，一同将产业技术标准、用人标准、产业项目经验转换为教育资源，研究符合国内外教育发展趋势的人才培养体系.
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s"
+                 style="visibility: visible; animation-delay: 0.1s;">
+                <div class="team-wrap2">
+                    <div class="team-img">
+                        <div>
+                            <div>
+                                <div align="center"><img src="/static/assets/images/choose-2.png" alt="Choose Images">
+                                </div>
+                            </div>
+                            <div>
+                                <h4>办学理念</h4>
+                                <p>
+                                    <a href="ys_yjy.aspx">
+                                        专业设置以行业需求为导向、专业建设以工程教育认证为标准、课程体系以工程实战环境为载体、人才培养以高素质的应用型人才和具备国际视野的复合型人才为目标...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s"
+                 style="visibility: visible; animation-delay: 0.1s;">
+                <div class="team-wrap2">
+                    <div class="team-img">
+                        <div>
+                            <div>
+                                <div align="center"><img src="/static/assets/images/choose-3.png" alt="Choose Images">
+                                </div>
+                            </div>
+                            <div>
+                                <h4>专业特色</h4>
+                                <p>
+                                    <a href="ys_yjy.aspx">
+                                        依据国家发展战略规划、建立了对标产业、独具特色的专业结构体系、遵循国际工程教育标准，制定了面向职业、强化实践的人才培养体系...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s"
+                 style="visibility: visible; animation-delay: 0.1s;">
+                <div class="team-wrap2">
+                    <div class="team-img">
+                        <div>
+                            <div>
+                                <div align="center"><img src="/static/assets/images/choose-4.png" alt="Choose Images">
+                                </div>
+                            </div>
+                            <div>
+                                <h4>课程特色</h4>
+                                <p>
+                                    <a href="ys_yjy.aspx">
+                                        真实产业项目、接轨前沿、重构知识、“边学习边实践，再学习再实践”迭代循环，实践和问题驱动中实现技能积累、知识碎片化，重组知识体系，体现灵活学习...
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="fanfact-area parallax black-opacity" data-speed="5" data-bg-image="static/assets/images/bg/1.jpg"
+         style="background-image: url(&quot;static/assets/images/bg/1.jpg&quot;); background-position: 50% 24.7844px; background-size: cover;">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6 col wow fadeInUp" data-wow-delay=".1s"
+                         style="visibility: visible; animation-delay: 0.1s;">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col wow fadeInUp" data-wow-delay=".2s"
+                         style="visibility: visible; animation-delay: 0.2s;">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col wow fadeInUp" data-wow-delay=".3s"
+                         style="visibility: visible; animation-delay: 0.3s;">
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 col  wow fadeInUp" data-wow-delay=".4s"
+                         style="visibility: visible; animation-delay: 0.4s;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
+
+{% block baidu %}
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?87ee2095392e9c188de8d2c4a20cac96";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script>
+{% endblock %}

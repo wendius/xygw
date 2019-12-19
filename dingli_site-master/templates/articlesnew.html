@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+<div class="breadcumb-area black-opacity bg-img-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="breadcumb-wrap">
+                    <h2>{{category}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="/">主页</a></li>
+                        <li>/</li>
+                        <li>{{category}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+
+<!--service-area-->
+<section class="service-area ptb-30 bg-1">
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="news_list_con">
+            <h3><span>{{category}}</span></h3>
+            <ul>
+
+                <!--<li><a href="#">新闻标题文字</a><span>2017.02.08</span></li>-->
+                <!--<li><a href="#">新闻标题文字</a><span>2017.02.08</span></li>-->
+                <!--<li><a href="#">新闻标题文字</a><span>2017.02.08</span></li>-->
+                <!--<li><a href="#">新闻标题文字</a><span>2017.02.08</span></li>-->
+                <!--<li><a href="#">新闻标题文字</a><span>2017.02.08</span></li>-->
+                <!--<div class="row">-->
+                {% for article in Articles %}
+                <li><a href="/article/{{article.id}}">{{ article.title }}</a><span>{{ article.publish_date|date:"Y-m-d" }}&nbsp&nbsp</span></li>
+                {% endfor %}
+
+            </ul>
+        </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="pagination-wrap">
+                <ul>
+
+                    {% if Articles.has_previous %}
+                    <li><a href="?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li><a href="?page={{ Articles.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
+                    {% endif %}
+                    <li class="active"><a href="#">{{ Articles.number }} </a></li>
+                    <!--<li><a href="#">2</a></li>-->
+                    <!--<li><a href="#">3</a></li>-->
+                    <!--<li><a href="#">4</a></li>-->
+                    <!--<li><a href="#">5</a></li>-->
+                    {% if Articles.has_next %}
+                    <li><a href="?page={{ Articles.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="?page={{ Articles.next_page_number }}"><i class="fa fa-angle-double-right"></i></a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+        <!--</div>-->
+    </div>
+</section>
+{% endblock %}

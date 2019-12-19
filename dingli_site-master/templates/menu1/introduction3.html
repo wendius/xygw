@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{% block banner %}
+  <div class="breadcumb-area black-opacity bg-img-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="breadcumb-wrap">
+            <h2>领导班子</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="single-service-area ptb-30">
+    <div class="container">
+      <!-- <div class="row">
+        <div class="text-left">
+          <div class="my-section-title">
+            <span class="section-serial">01</span>
+            <div class="title-text">
+              <h2>UBL人才培养模式</h2>
+              <p>主页人才培养</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="text-left">
+          <div class="my-section-title">
+            <span class="section-serial">01</span>
+            <div class="title-text">
+              <h2>领导班子</h2>
+              <p>PRESENT LEADER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+      </div>
+
+    </div>
+  </div>
+
+
+<section class="team-area team-area2 team-area3 ptb-30">
+            <div class="container">
+                <div class="row">
+            {% for item  in Leader_list %}
+                    <div class="col-md-3 col-sm-6 col-xs-12 col wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s;">
+                        <div class="team-wrap3 mb-30">
+                            <div class="team-img">
+                                <a href="/teacherdetail/{{item.id}}">
+                                    <img src="/media/{{item.photo}}" alt="">
+                                </a>
+                            </div>
+                            <div class="team-content">
+                                <h3>{{item.name}}</h3>
+                                <p>{{item.title}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+            {% endfor %}
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

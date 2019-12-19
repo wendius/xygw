@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+<div class="breadcumb-area black-opacity bg-img-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcumb-wrap">
+                            <h2>{{category}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcumb-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li><a href="index.html">主页</a></li>
+                                <li>/</li>
+                                <li>{{category}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block content %}
+
+<!--service-area-->
+<section class="service-area ptb-140 bg-1">
+            <div class="container">
+                <div class="row">
+{% for article in Articles %}
+                    <div class="col-md-4 col-sm-6 col-xs-12 col">
+                        <div class="blog-wrap  mb-30">
+                            <div class="blog-img">
+                                <img src=" /media/{{article.title_pic}} " alt="">
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-university"></i> {{ article.location }}</a></li>
+                                        <li><a href="#"><i class="fa fa-user-plus"></i> {{ article.publish_person }}</a></li>
+                                        <li><a href="#"><i class="fa fa-image"></i>{{ article.photoby }}</a></li>
+                                    </ul>
+                                </div>
+                                <h3><a href="/article/{{article.id}}"> {{ article.title }}</a></h3>
+                                <p>{{ article.introduction }}</p>
+                                <a href="/article/{{article.id}}" class="btn-style">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+{% endfor %}
+                    <div class="col-xs-12">
+                        <div class="pagination-wrap">
+                            <ul>
+
+                                        {% if Articles.has_previous %}
+                                <li><a href="?page=1"><i class="fa fa-angle-double-left"></i></a></li>
+                                <li><a href="?page={{ Articles.previous_page_number }}"><i class="fa fa-angle-left"></i></a></li>
+                {% endif %}
+                                <li class="active"><a href="#">{{ Articles.number }} </a></li>
+                                <!--<li><a href="#">2</a></li>-->
+                                <!--<li><a href="#">3</a></li>-->
+                                <!--<li><a href="#">4</a></li>-->
+                                <!--<li><a href="#">5</a></li>-->
+                                        {% if Articles.has_next %}
+                                <li><a href="?page={{ Articles.next_page_number }}"><i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="?page={{ Articles.next_page_number }}"><i class="fa fa-angle-double-right"></i></a></li>
+                                       {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}

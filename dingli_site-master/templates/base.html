@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+{% include "header.html" %}
+
+<body>
+
+ {% include "menu.html" %}
+
+
+{% block banner %}
+    {% endblock %}
+    {% block content %}
+
+{% endblock %}
+
+{% include "footer.html" %}
+{% block baidu %}
+{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+<div class="breadcumb-area black-opacity bg-img-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="breadcumb-wrap">
+                            <h2>{{article.title}}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcumb-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul>
+                                <li><a href="/">主页</a></li>
+                                <li>/</li>
+                                <li>{{article.title}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{% block content %}
+<section class="blog-details-area ptb-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12">
+                        <div class="blog-details-wrap">
+                            <div class="blog-details-img">
+
+                                <img src="{{MEDIA_URL}}{{article.title_pic}}" alt="">
+                                <!--<img src="/static/assets/images/blog/blog-details.jpg" alt="">-->
+                            </div>
+                            <div class="blog-details-content">
+                                <p>{% autoescape off %}{{article.content}}{% endautoescape %}</p>
+                            </div>
+                        </div>
+                    </div>
+		</div>
+            </div>
+        </section>
+{% endblock %}

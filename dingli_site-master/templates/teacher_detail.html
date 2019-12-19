@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block banner %}
+{% endblock %}
+{% block content %}
+
+<div class="breadcumb-area black-opacity bg-img-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="breadcumb-wrap">
+                    <h2>老师详情</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcumb-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li>/</li>
+                        <li>老师详情</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12 col">
+                <div class="team-wrap mb-30">
+                    <div class="team-img">
+                        <img src="/media/{{teacher.photo}}" alt="">
+                    </div>
+                    <div class="team-content">
+                        <div class="team-info">
+                            <h3>{{teacher.name}}</h3>
+                            <p>{{teacher.title}}</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    <div class="teacher__details">
+                        <h2>
+                            <span id="lb_tname">{{teacher.name}}，{{teacher.title}}</span></h2>
+                        <h6>
+                            <span id="lb_zc_dx">{{teacher.grade}}，{{teacher.school_name}}</span></h6>
+                        <h6>
+                            <span id="lb_jj">{{teacher.moto}}</span></h6>
+                        <ul class="teacher__address">
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                电话：{{teacher.phone}}
+                                <span id="lb_tel"></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                Email：{{teacher.email}}
+                                <span id="lb_email"></span>
+                            </li>
+
+                        </ul>
+                    </div>
+            </div>
+
+
+            <div class="col-md-8 col-lg-8 col-sm-8 col-xs-12 xs-mt-40">
+                                    <div class="all__courses__area">
+                        <h2 class="title__style--2">老师信息</h2>
+                        <div class="profile__courses__inner">
+                            <ul class="profile__courses__list">
+                                <li>
+                                    <i class="fa fa-graduation-cap"></i>
+                                    职称名称：{{teacher.title}}
+                                </li>
+                                <li>
+                                    <i class="fa fa-bookmark"></i>
+                                    工作经历：{{teacher.work_experice}}
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="all__crs__details">
+                            <i class="fa fa-star"></i>
+                            个人简介：
+                            <p>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{teacher.introduction}}
+                            </p>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock %}
